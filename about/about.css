@@ -217,10 +217,6 @@ footer ul {
     font-weight: 500;
 }
 
-.show {
-    display: flex;
-}
-
 /* Media queries */
 @media (max-width: 1000px) {
     main {
