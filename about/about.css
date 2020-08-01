@@ -111,6 +111,10 @@ main {
     width: 100vw;
 }
 
+#hamburger-section a:hover {
+    color: #ffffff;
+}
+
 /* Chef section */
 #chef-section {
     background-color: var(--primary-color);

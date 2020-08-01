@@ -101,6 +101,10 @@ header img {
     width: 100vw;
 }
 
+#hamburger-section a:hover {
+    color: #ffffff;
+}
+
 #title-div {
     justify-content: space-between;
     margin: 0 auto;
