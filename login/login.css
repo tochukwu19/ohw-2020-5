@@ -88,9 +88,10 @@ button {
 }
 
 #bottom-div {
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 1em;
-    width: 90%;
+    width: 70%;
 }
 
 #bottom-div div {
@@ -135,5 +136,17 @@ button {
 
     #logo {
         margin-right: 2em;
+    }
+
+    #bottom-div {
+        text-align: center;
+    }
+
+    #bottom-div div {
+        width: 100%;
+    }
+
+    #bottom-div .text-right {
+        text-align: center;
     }
 }

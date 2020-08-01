@@ -23,8 +23,10 @@ body {
     height: 50%;
     justify-content: center;
     max-width: 536px;
-    padding: 1.5em;
+    padding: 2em;
+    position: relative;
     width: 85%;
+    z-index: -1;
 }
 
 #completed-img {
@@ -33,9 +35,15 @@ body {
     width: 78px;
 }
 
+#completed-box p {
+    margin-bottom: 5em;
+}
+
 #back-to-menu {
+    bottom: 20px;
     color: #5c5c5c;
-    margin-top: 4em;
+    position: absolute;
+    right: 20px;
     text-align: right;
     text-decoration: none;
     width: 100%;
@@ -47,6 +55,10 @@ body {
 
 /* Media queries */
 @media (max-width: 400px) {
+    #completed-box {
+        width: 90%;
+    }
+
     #completed-img {
         height: 50px;
         width: 50px;

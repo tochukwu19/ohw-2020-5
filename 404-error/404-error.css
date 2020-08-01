@@ -8,9 +8,11 @@ body {
     flex-wrap: wrap;
     font-size: 1.5rem;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 6em;
-    max-width: 400px;
+    /* margin: 0 auto; */
+    margin-left: 2em;
+    margin-top: 4em;
+    /* border: 1px solid red; */
+    max-width: 500px;
     width: 60%;
 }
 
@@ -19,5 +21,14 @@ body {
 }
 
 #error-message {
+    font-size: 2.25rem;
     text-transform: uppercase;
+}
+
+/* Media queries */
+@media (max-width: 400px) {
+    #cloud {
+        height: 60px;
+        width: 60px;
+    }
 }

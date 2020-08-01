@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Delivery method</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/styles.css" type="text/css">
         <link rel="stylesheet" href="./delivery-method.css" type="text/css">
         <script src="../public/script.js" defer></script>
     </head>
@@ -37,18 +39,19 @@
                     <li><a href="#">Logout</a></li>
                 </ul>
             </nav>
+            <!-- Main section -->
             <section id="main-section">
-                <p>What do you prefer?</p>
+                <p>Which do you prefer?</p>
                 <form action="" method="POST">
                     <div class="form-input">
-                        <input id="delivery" type="radio" name="delivery-method" value="delivery">
+                        <input id="delivery" type="radio" name="delivery-method" value="delivery" checked required>
                         <label for="delivery">Delivery</label>
                     </div>
                     <div class="form-input">
-                        <input id="pickup" type="radio" name="delivery-method" value="pickup">
+                        <input id="pickup" type="radio" name="delivery-method" value="pickup" required>
                         <label for="pickup">Pickup</label>
                     </div>
-                    <button id="next-btn" type="submit">Next</button>
+                    <button id="next-btn" class="bold" type="submit">Next</button>
                 </form>
             </section>
         </main>
