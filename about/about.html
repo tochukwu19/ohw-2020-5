@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Foodies First</title>
+        <title>About</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/styles.css" type="text/css">
         <link rel="stylesheet" href="./about.css" type="text/css">
-        <script src="./about.js" defer></script>
+        <script src="../public/script.js" defer></script>
     </head>
     <body>
         <!-- Header -->
@@ -23,14 +24,8 @@
                         <li><a href="#">About</a></li>
                     </ul>
                 </nav>
-                <a class="hide" href="#" title="Order now"><img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125800/shopping-cart_1_1_z6whh9.png" alt="Order"></a>
-                <a href="tel:+234801234567">
-                    <figure class="flex hide">
-                        <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125974/phone-call_vhij6y.svg" alt="Call us">
-                        <figcaption>+234801234567</figcaption>
-                    </figure>
-                </a>
-                <img id="hamburger" src="https://drive.google.com/uc?export=view&id=1os-XVZj9O17KJ4BdoKrG4qAhKn6t7Kvh" alt="">
+                <a id="login" class="hide bold" href="../login/login.html">Login</a>
+                <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
             </div>
         </header>
         <!-- Main content -->
@@ -40,11 +35,12 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
             </nav>
             <img id="people" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126268/group-of-people-standing-indoors-3184396_1_doxb8t.jpg" alt="">
             <!-- Introduction -->
-            <section class="company-info bold">
+            <section id="who-are-we" class="company-info bold">
                 <h2>Who Are We</h2>
                 <p>We are an online catering service. We love providing home cooked meals to the satisfaction of our customers.</p>
                 <p>We also love providing the best of food alongside an excellent delivery service. Whether it is delivery or pickups. You can be assured that Foodies First has got you covered.</p>
@@ -63,23 +59,28 @@
                 <h2>Healthy Tasty Yummy Delicacies</h2>
                 <div id="delicacies" class="flex flex-column">
                     <div class="card flex">
-                        <h3 class="bold">Good food is Tasty</h3>
+                        <div class="card-title flex">
+                            <h3 class="bold">Good food is Tasty</h3>
+                        </div>
                         <p>Foodies First provides mouth-watering and tasty delicacies</p>
                     </div>
                     <div class="card flex">
-                        <h3 class="bold">Good food is Healthy</h3>
+                        <div class="card-title flex">
+                            <h3 class="bold">Good food is Healthy</h3>
+                        </div>
                         <p>Foodies First provides healthy food.</p>
                     </div>
                     <div class="card flex">
-                        <h3 class="bold">Good food is Readily available</h3>
+                        <div class="card-title flex">
+                            <h3 class="bold">Good food is Readily available</h3>
+                        </div>
                         <p>With our excellent delivery services, Foodies First makes your orders readily available.</p>
                     </div>
                 </div>
             </section>
             <!-- Company info section -->
             <section class="company-info">
-                <p class="bold">Foodies First is a catering service that provides home-made meals at affordable prices. We preprare varieties of dishes on order-basis. We offer meal packages including breakfast & lunch deals, bowls of soup & stew and many more picked-up or delivered to your doorstep within Lagos.</p>
-                <button id="explore-btn" class="bold">Explore</button>
+                <p class="bold">Foodies First is a catering service that provides home-made meals at affordable prices. We prerare varieties of dishes on order-basis. We offer meal packages including breakfast & lunch deals, bowls of soup & stew and many more picked-up or delivered to your doorstep within Lagos.</p>
             </section>
         </main>
         <!-- Footer -->

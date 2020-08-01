@@ -3,15 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>404 Error</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <title>Delivery method</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../public/styles.css" type="text/css">
-        <link rel="stylesheet" href="./404-error.css" type="text/css">
+        <link rel="stylesheet" href="./delivery-method.css" type="text/css">
         <script src="../public/script.js" defer></script>
     </head>
     <body>
-        <!-- Header -->
+        <!-- Header section -->
         <header>
             <div id="header-div" class="flex">
                 <figure class="flex">
@@ -29,7 +27,8 @@
                 <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
             </div>
         </header>
-        <main>
+        <main class="flex">
+            <!-- Hamburger section -->
             <nav id="hamburger-section" class="bold">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -38,12 +37,19 @@
                     <li><a href="#">Logout</a></li>
                 </ul>
             </nav>
-            <section id="main-section" class="flex">
-                <img id="cloud" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596154416/rain_1_m3qp16.png" alt="">
-                <div>
-                    <p id="error-message">404 error</p>
-                    <p>Something is Wrong</p>
-                </div>
+            <section id="main-section">
+                <p>What do you prefer?</p>
+                <form action="" method="POST">
+                    <div class="form-input">
+                        <input id="delivery" type="radio" name="delivery-method" value="delivery">
+                        <label for="delivery">Delivery</label>
+                    </div>
+                    <div class="form-input">
+                        <input id="pickup" type="radio" name="delivery-method" value="pickup">
+                        <label for="pickup">Pickup</label>
+                    </div>
+                    <button id="next-btn" type="submit">Next</button>
+                </form>
             </section>
         </main>
     </body>

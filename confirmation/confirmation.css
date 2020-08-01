@@ -1,15 +1,4 @@
-/* CSS Varibles */
-:root {
-    --primary-color: #ffca13;
-}
-
 /* General styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 html {
     font-size: 16px;
 }
@@ -17,86 +6,6 @@ html {
 body {
     background-color: #e5e5e5;
     font-family: 'Poppins', sans-serif;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--primary-color);
-}
-
-/* Header section */
-header {
-    background-color: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 1em 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-#header-div {
-    align-items: center;
-    font-family: 'Poppins' sans-serif;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 95%;
-}
-
-header figure {
-    align-items: center;
-}
-
-header nav {
-    min-width: 220px;
-    width: 40%;
-}
-
-header ul {
-    justify-content: space-between;
-}
-
-header img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Hamburger section */
-#hamburger {
-    cursor: pointer;
-    display: none;
-    height: 10px;
-    width: 20px;
-}
-
-#hamburger-section {
-    align-items: center;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    display: none;
-    justify-content: center;
-    height: 100vh;
-    line-height: 3;
-    position: absolute;
-    top: 50px;
-    width: 100vw;
-}
-
-#hamburger-section a:hover {
-    color: #ffffff;
-}
-
-#logo {
-    height: 50px;
-    width: 50px;
 }
 
 /* Completed box */
@@ -128,6 +37,7 @@ header img {
     color: #5c5c5c;
     margin-top: 4em;
     text-align: right;
+    text-decoration: none;
     width: 100%;
 }
 
@@ -135,34 +45,7 @@ header img {
     text-decoration: underline;
 }
 
-/* General classes */
-.flex {
-    display: flex;
-}
-
-.bold {
-    font-weight: 500;
-}
-
 /* Media queries */
-@media (max-width: 700px) {
-    html {
-        font-size: 12px;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    #hamburger-section {
-        font-size: 1.5rem;
-    }
-
-    .hide {
-        display: none;
-    }
-}
-
 @media (max-width: 400px) {
     #completed-img {
         height: 50px;
