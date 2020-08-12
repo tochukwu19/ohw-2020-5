@@ -7,23 +7,36 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <div id="header-div" class="flex">
-            <figure class="flex">
-                <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
-                <figcaption>Foodies First</figcaption>
-            </figure>
-            <nav class="hide">
-                <ul class="flex">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <a id="login" class="hide bold" href="../login/login.html">Login</a>
-            <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="Hamburger">
+  <header>
+    <div id="header-div" class="flex">
+        <figure class="flex">
+            <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
+            <figcaption>Foodies First</figcaption>
+        </figure>
+        <nav class="hide">
+            <ul class="flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div id="login-div" class="flex hide">
+            <a class="flex" href="#" title="Order Now"><img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125800/shopping-cart_1_1_z6whh9.png" alt="Cart"></a>
+            <a id="login" class="bold" href="../login/login.html">Login</a>
         </div>
-    </header>
+        <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
+    </div>
+</header>
+
+<!-- Hamburger section -->
+<nav id="hamburger-section" class="bold">
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Logout</a></li>
+  </ul>
+</nav>
 
     <div class="admin-info">
         <p class="admin-name">Admin</p>

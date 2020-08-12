@@ -1,17 +1,20 @@
-/* CSS Varibles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Copped Header and Footer styles */
 :root {
     --primary-color: rgb(255, 202, 19);
 }
 
 /* General styles */
-body {
-
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html {
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 header ul,
@@ -73,6 +76,15 @@ header img {
     height: 24px;
 }
 
+#login-div {
+    justify-content: space-between;
+    width: 140px;
+}
+
+#login-div .flex {
+    align-items: center;
+}
+
 #login {
     background-color: var(--primary-color);
     border: none;
@@ -105,9 +117,93 @@ header img {
     width: 100vw;
 }
 
+
 #hamburger-section a:hover,
 footer a:hover {
     color: #ffffff;
+}
+
+/* Menu section */
+.menu {
+    padding-left: 20px;
+}
+
+.menu-heading {
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+.menu-items {
+    margin-top: 80px;
+}
+
+.menu-items-row {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: 350px;
+}
+
+.menu-items-row::-webkit-scrollbar {
+    width: 1em;
+}
+
+.menu-items-row::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    outline: 1px solid slategrey;
+}
+
+.menu-card {
+    width: 300px;
+    height: 310px;
+    margin-right: 20px;
+}
+
+.menu-card img {
+    height: 150px;
+    width: 250px;
+}
+
+.menu-card h3 {
+    font-weight: lighter;
+}
+
+.menu-card p {
+    color: #333;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.call-to-action button {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.menu-card-text {
+    padding: 10px;
+}
+
+
+/* Modal styling */
+.modal{
+    background-color: #000;
+    z-index: 5;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 450px;
+    width: 400px;
+    margin-top: -220px;
+    margin-left: -200px;
 }
 
 /* Footer section */
@@ -116,6 +212,7 @@ footer {
     color: #181818;
     font-family: 'Poppins', sans-serif;
     padding: 1.5em 0;
+    width: 100%;
 }
 
 #footer-div {
@@ -138,18 +235,17 @@ footer ul {
 /* General classes */
 .flex {
     display: flex;
-    align-items: center;
-    margin-right: 10px;
 }
 
 .bold {
     font-weight: 500;
 }
 
+
 /* Media queries */
 @media (max-width: 700px) {
     html {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #hamburger {
@@ -168,16 +264,10 @@ footer ul {
 
 @media (max-width: 500px) {
     footer .flex-column {
-        margin: 0 auto;
-        padding: 0;
+        width: 100%;
     }
 
     .flex-column {
         flex-direction: column;
-    }
-
-    .flex li{
-        width: fit-content;
-        margin: 0 auto;
     }
 }
