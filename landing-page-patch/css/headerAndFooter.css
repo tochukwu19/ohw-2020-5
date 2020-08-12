@@ -152,12 +152,23 @@ footer ul {
         font-size: 15px;
     }
 
+    #logo-div {
+        margin-right: 1.5em;
+        width: 160px;
+    }
+
     #hamburger {
         display: block;
+        margin-left: 1.5em;
     }
 
     #hamburger-section {
         font-size: 1.5rem;
+    }
+
+    #login-div {
+        justify-content: flex-end;
+        width: 100%;
     }
 
     .hide {

@@ -195,7 +195,8 @@ footer a:hover {
 
 /* Modal styling */
 .modal{
-    background-color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
     z-index: 5;
     position: fixed;
     top: 50%;
@@ -204,8 +205,57 @@ footer a:hover {
     width: 400px;
     margin-top: -220px;
     margin-left: -200px;
+    display: flex;
+    justify-content: center;
 }
 
+.modal-container{
+    text-align: center;
+}
+
+.modal-container h3{
+    font-weight: lighter;
+}
+
+.modal-container img{
+    height: 50px;
+}
+
+.modal-heading{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 30px 0px 30px 0px;
+}
+
+.checkout,
+.modal-heading button{
+    padding: 7px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    border: none;
+    color: #000;
+}
+
+.order{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0px 0px 50px 0px;
+}
+
+.summary h3{
+    margin: 0px 0px 10px 0px;
+}
+
+.sum{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin: 0px 0px 10px 0px;
+}
 /* Footer section */
 footer {
     background-color: var(--primary-color);
@@ -248,12 +298,23 @@ footer ul {
         font-size: 12px;
     }
 
+    #logo-div {
+        margin-right: 1.5em;
+        width: 160px;
+    }
+
     #hamburger {
         display: block;
+        margin-left: 1.5em;
     }
 
     #hamburger-section {
         font-size: 1.5rem;
+    }
+
+    #login-div {
+        justify-content: flex-end;
+        width: 100%;
     }
 
     .hide {

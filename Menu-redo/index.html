@@ -11,7 +11,7 @@
 <body>
   <header>
     <div id="header-div" class="flex">
-      <figure class="flex">
+      <figure id="logo-div" class="flex">
         <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png"
           alt="Logo">
         <figcaption>Foodies First</figcaption>
@@ -21,13 +21,12 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
         </ul>
       </nav>
-      <div id="login-div" class="flex hide">
-        <a class="flex" href="#" title="Order Now"><img
-            src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125800/shopping-cart_1_1_z6whh9.png"
-            alt="Cart"></a>
-        <a id="login" class="bold" href="../login/login.html">Login</a>
+      <div id="login-div" class="flex">
+        <a class="flex" href="#" title="Order Now"><img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1597237392/Group_5_nlafx8.png" alt="Cart"></a>
+            <a id="login" class=" bold hide" href="../login/login.html">Login</a>
       </div>
       <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
     </div>
@@ -39,7 +38,8 @@
       <li><a href="#">Home</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Logout</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Login</a></li>
     </ul>
   </nav>
 
@@ -216,7 +216,37 @@
   <!-- Popup modal -->
   <div class="modal">
     <div class="modal-container">
-      
+      <div class="modal-heading">
+        <h3>Your cart</h3>
+        <button>Clear cart</button>
+      </div>
+      <div class="order">
+        <img src="./Assets/Image3.png" alt="Image 3">
+        <div class="order-text">
+          <h4>Jollof rice and chicken</h4>
+          <p>1000 Naira <span>+</span> 1 <span>-</span></p>
+        </div>
+      </div>
+      <div class="summary">
+        <h3>Delivery foodies first</h3>
+        <div class="sum">
+          <p>Items purchased:</p>
+          <p>1500 Naira</p>
+        </div>
+        <div class="sum">
+          <p>Delivery fee:</p>
+          <p>1</p>
+        </div>
+        <div class="sum">
+          <p>Sales tax:</p>
+          <p>0 Naira</p>
+        </div>
+        <div class="sum">
+          <p>Order Total:</p>
+          <p>1000 Naira</p>
+        </div>
+      </div>
+      <button class="checkout">Checkout</button>
     </div>
   </div>
 
